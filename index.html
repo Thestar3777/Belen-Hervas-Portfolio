@@ -2,175 +2,320 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="imageHeader.png" />
+    <link rel="icon" type="image/svg+xml" href="images/imageHeader.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stella's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Belen Hervas (Stella) - Web Developer & Designer Portfolio. Explore my web development projects and connect with me."
+    />
+    <meta
+      name="keywords"
+      content="web developer, web design, portfolio, HTML, CSS, JavaScript, responsive design"
+    />
+    <meta name="author" content="Belen Hervas" />
+    <title>Stella's Portfolio - Web Developer & Designer</title>
+
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/navigation.css" />
+    <link rel="stylesheet" href="stylesheets/projects-section.css" />
+    <link rel="stylesheet" href="stylesheets/about-section.css" />
+    <link rel="stylesheet" href="stylesheets/contact-footer.css" />
+    <link rel="stylesheet" href="stylesheets/responsive.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Notable&family=Montserrat:wght@100;400;700;900&family=Sour+Gummy:ital,wght@0,100;0,400;1,100;1,400&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- Navigation section-->
-    <nav class="navbar-container">
-      <img
-        class="nav-profile-pic"
-        src="profilePicture.png"
-        alt="profile picture of Stella"
-      />
 
-      <!--
-      <button class="nav-hamburger-menu" aria-label="Toggle   menu">
-        <img src="hamburger-menu.svg" alt="menu icon" />
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar-container">
+      <div class="nav-brand">
+        <img
+          class="nav-profile-pic"
+          src="images/profilePicture.png"
+          alt="profile picture of Stella"
+        />
+        <span class="nav-name">Stella</span>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-    -->
+
       <ul class="nav-links">
-        <li><a href="#about">About me</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#follow">Follow Me</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
 
-    <!--Header section-->
-
+    <!-- Header -->
     <header class="header-container">
       <div class="header-text">
-        <h1>Hi, I'm Stella</h1>
-        <h2 class="subtitle">I'm into web development & design</h2>
+        <p class="header-greeting">👋 Hello, I'm</p>
+        <h1>Belen Hervas</h1>
+        <h2 class="subtitle">Web Developer & Designer</h2>
+        <p class="header-description">
+          Crafting beautiful, responsive websites with clean code and creative
+          design
+        </p>
+        <div class="header-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
       </div>
 
-      <img
-        class="header-image"
-        src="imageHeader.png"
-        alt="illustration of a web designer"
-      />
+      <div class="header-image-wrapper">
+        <img
+          class="header-image"
+          src="images/imageHeader.png"
+          alt="illustration of a web designer"
+        />
+      </div>
     </header>
 
     <main>
-      <!--About Me section-->
-
+      <!-- About Me Section -->
       <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p class="about-text">
-          My name is Belen Hervas, also known as Stella I am an enthusiastic
-          Computer Science student with a deep love for designing and building
-          beautiful, responsive websites; my goal is to keep growing in my field
-          through hands-on projects and by exploring new technologies as they
-          emerge. Thank you for visiting my website, tag along and follow me to
-          watch my journey as I continue building, learning, and creating every
-          single day ;&#41;
-        </p>
+        <div class="section-header">
+          <span class="section-label">Get to know me</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            My name is <strong>Belen Hervas</strong>, also known as
+            <strong>Stella</strong>. I am an enthusiastic Computer Science
+            student with a deep passion for designing and building beautiful,
+            responsive websites.
+          </p>
+          <p class="about-text">
+            My goal is to keep growing in my field through hands-on projects and
+            by exploring new technologies as they emerge. I believe in writing
+            clean, semantic code and creating user experiences that are both
+            functional and delightful.
+          </p>
+          <p class="about-highlight">
+            Thank you for visiting my website. Follow along to watch my journey
+            as I continue building, learning, and creating every single day! 😊
+          </p>
+        </div>
       </section>
 
-      <!--Projects Section-->
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="section-header">
+          <span class="section-label">My expertise</span>
+          <h2>Skills & Technologies</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>Frontend Development</h3>
+            <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Modern layouts, Typography, Color theory, User experience</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Mobile-first approach, Cross-browser compatibility</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3>Performance</h3>
+            <p>Optimization, Clean code, Best practices</p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-
-        <div class="project">
-          <div class="project-img-container">
-            <a href="https://thestar3777.github.io/YouTube-Copy-Project/">
-              <img
-                class="project-img"
-                src="YoutubeClone.png"
-                alt="Screenshot of YouTube Clone project"
-              />
-              <img
-                class="project-small-img"
-                src="youtubeSmall.png"
-                alt="Secondary image of YouTube Clone project"
-              />
-            </a>
-          </div>
-          <h3>Youtube Clone</h3>
-          <p>
-            Built with HTML, CSS, and responsive design principles to recreate
-            the look and layout of YouTube, focusing on clean structure,
-            semantic code, and adaptive visuals across different desktop
-            screens.
-          </p>
+        <div class="section-header">
+          <span class="section-label">My work</span>
+          <h2>Featured Projects</h2>
         </div>
 
-        <div class="project">
-          <div class="project-img-container">
-            <a href="https://formulakentucky.netlify.app/">
-              <img
-                class="project-img"
-                src="formulaKentucky.png"
-                alt="Screenshot of Formula Kentucky project"
-              />
-              <img
-                class="project-small-img"
-                src="formulaKentuckySmall.png"
-                alt="Secondary image of Formula Kentucky project"
-              />
-            </a>
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-img-container">
+              <a
+                href="https://thestar3777.github.io/YouTube-Copy-Project/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="project-img"
+                  src="images/YoutubeClone.png"
+                  alt="Screenshot of YouTube Clone project"
+                />
+
+                <div class="project-overlay">
+                  <span class="project-link-text">View Live Site →</span>
+                </div>
+              </a>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <h3>YouTube Clone</h3>
+              <p>
+                A pixel-perfect recreation of YouTube's interface, built with
+                HTML and CSS. Features responsive design principles, clean
+                semantic code structure, and adaptive visuals that work
+                seamlessly across different screen sizes.
+              </p>
+              <a
+                href="https://thestar3777.github.io/YouTube-Copy-Project/"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project →
+              </a>
+            </div>
           </div>
-          <h3>Formula Kentucky</h3>
-          <p>
-            Built with HTML, CSS, and responsive design principles to recreate
-            the Formula Kentucky homepage, highlighting structured layout,
-            modern UI styling, and adaptability across devices.
-          </p>
+
+          <div class="project">
+            <div class="project-img-container">
+              <a
+                href="https://formulakentucky.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="project-img"
+                  src="images/formulaKentucky.png"
+                  alt="Screenshot of Formula Kentucky project"
+                />
+
+                <div class="project-overlay">
+                  <span class="project-link-text">View Live Site →</span>
+                </div>
+              </a>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">UI Design</span>
+              </div>
+              <h3>Formula Kentucky</h3>
+              <p>
+                A modern recreation of the Formula Kentucky homepage, showcasing
+                structured layouts, contemporary UI styling, and full
+                responsiveness. Demonstrates attention to detail in recreating
+                professional web designs with clean, maintainable code.
+              </p>
+              <a
+                href="https://formulakentucky.netlify.app/"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
 
-    <footer id="follow" class="follow-section">
-      <h2>Follow Me</h2>
-      <div class="socials-box">
-        <p>
-          <a href="https://www.facebook.com/profile.php?id=61578845318186">
-            <img
-              src="Facebook_Logo_2023.png"
-              alt="facebook logo"
-              width="50"
-              height="50"
-            />
-          </a>
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="section-header">
+          <span class="section-label">Let's connect</span>
+          <h2>Get In Touch</h2>
+        </div>
+        <p class="contact-description">
+          I'm always open to discussing new projects, creative ideas, or
+          opportunities to be part of your vision. Feel free to reach out
+          through any of the platforms below!
         </p>
-        <p>
-          <a href="https://www.instagram.com/belen.hervasart/">
+        <div class="socials-grid">
+          <a
+            href="https://github.com/Thestar3777"
+            class="social-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src="Instagram_icon.png"
-              alt="instagram logo"
-              width="50"
-              height="50"
-            />
-          </a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/belen-hervas/">
-            <img
-              src="linkedin_logo_icon_170234.png"
-              alt="Linkedin logo"
-              width="50"
-              height="50"
-            />
-          </a>
-        </p>
-        <p>
-          <a href="https://github.com/Thestar3777">
-            <img
-              src="github_logo_icon_229278.png"
+              src="images/github_logo_icon_229278.png"
               alt="Github logo"
               width="50"
               height="50"
             />
+
+            <span>GitHub</span>
           </a>
-        </p>
-      </div>
+          <a
+            href="https://www.linkedin.com/in/belen-hervas/"
+            class="social-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/linkedin_logo_icon_170234.png"
+              alt="LinkedIn logo"
+              width="50"
+              height="50"
+            />
+
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://www.instagram.com/belen.hervasart/"
+            class="social-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/Instagram_icon.png"
+              alt="Instagram logo"
+              width="50"
+              height="50"
+            />
+
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61578845318186"
+            class="social-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/Facebook_Logo_2023.png"
+              alt="Facebook logo"
+              width="50"
+              height="50"
+            />
+
+            <span>Facebook</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Belen Hervas. Built with passion and clean code.</p>
+      <p class="footer-subtitle">Designed & Developed by Stella</p>
     </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
